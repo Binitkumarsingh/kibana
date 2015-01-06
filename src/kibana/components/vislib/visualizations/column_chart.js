@@ -279,7 +279,7 @@ define(function (require) {
           .attr('width', width)
           .attr('height', height + margin.top + margin.bottom)
           .append('g')
-          .attr('transform', 'translate(0,' + margin.top + ')');
+          .attr('transform', 'translate(0,' + (margin.top + margin.bottom) + ')');
 
           bars = self.addBars(svg, layers);
 

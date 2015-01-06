@@ -140,7 +140,7 @@ define(function (require) {
 
             svg.append('g')
             .attr('class', 'y axis')
-            .attr('transform', 'translate(' + (width - 2) + ',' + margin.top + ')')
+            .attr('transform', 'translate(' + (width - 2) + ',' + (margin.top + margin.bottom) + ')')
             .call(yAxis);
           }
         });

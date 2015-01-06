@@ -186,7 +186,7 @@ define(function (require) {
           .call(self.xAxis);
         });
 
-        selection.call(self.filterOrRotate());
+        //selection.call(self.filterOrRotate());
       };
     };
 

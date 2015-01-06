@@ -9,7 +9,6 @@
   .display(flex);
   .flex(1 1 100%);
   .flex-direction(row);
-  margin: 10px 0 0 6px;
 }
 
 /* YAxis logic */
@@ -39,6 +38,10 @@
   .flex(1 1 25px);
   min-width: 14px;
   min-height: 14px;
+
+  svg {
+    overflow: visible;
+  }
 }
 
 .y-axis-title {
@@ -76,21 +79,20 @@
 
 .chart-wrapper {
   .display(flex);
-  .flex(1 0 20px);
+  .flex(10 0 20px);
   overflow: visible;
-  margin: 0 5px 0 0;
 }
 
 .chart-wrapper-column {
   .display(flex);
-  .flex(1 0 20px);
+  .flex(10 0 20px);
   .flex-direction(row);
 }
 
 .chart-wrapper-row {
   .display(flex);
   .flex-direction(column);
-  .flex(1 0 100%);
+  .flex(10 0 100%);
 }
 
 .chart {
@@ -113,8 +115,8 @@
 
 .x-axis-wrapper {
   .display(flex);
+  .flex(1 0 auto);
   .flex-direction(column);
-  min-height: 45px;
   overflow: visible;
 }
 
@@ -143,7 +145,6 @@
 }
 
 .x-axis-div {
-  margin-top: -5px;
   min-height: 20px;
   min-width: 20px;
 }
